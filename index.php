@@ -15,6 +15,9 @@ require_once 'src/Play.php';
  *
  * Criei um construct na classes, para criar alguns itens, se observar, cada classe vai ter uma lista
  * de itens diferentes. Tenho mesmo método só que com valores diferentes para cada class.
+ *
+ * Mostrei como é possivel usar mais de uma trait. Como são componentes diferentes, um se trata
+ * de menu e outro sobre asentos, por isso, criei duas traits, para não confundir.
  */
 
 
@@ -27,3 +30,4 @@ print_r($movie->getMenu());
 
 $play = new Play();
 print_r($play->getMenu());
+print_r($play->getSeats());
