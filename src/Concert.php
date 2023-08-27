@@ -1,6 +1,6 @@
 <?php
 require_once 'src/HasMenu.php';
-require_once 'src/EVent.php';
+require_once 'src/Event.php';
 class Concert extends Event
 {
     use HasMenu;
@@ -13,11 +13,5 @@ class Concert extends Event
           'Nachos'
         ];
     }
-
-    public function getPrice()
-    {
-        return 'R$12,00'.PHP_EOL;
-    }
-
 
 }

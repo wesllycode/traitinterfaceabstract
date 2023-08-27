@@ -35,10 +35,11 @@ require_once 'src/Play.php';
 
 $concert = new Concert();
 print_r($concert->getMenu());
-print_r($concert->getPrice());
+print_r($concert->chargeCard());
 
 $movie = new Movie();
 print_r($movie->getMenu());
+print_r($movie->chargeCard());
 
 $play = new Play();
 print_r($play->getMenu());

@@ -1,7 +1,8 @@
 <?php
 require_once 'src/HasMenu.php';
 require_once 'src/PricingContract.php';
-class Movie implements PricingContract
+require_once 'src/Event.php';
+class Movie extends Event
 {
     use HasMenu;
 
