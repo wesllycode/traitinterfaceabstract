@@ -1,8 +1,5 @@
 <?php
 class Movie
 {
-    public function getMenu()
-    {
-
-    }
+    use HasMenu;
 }

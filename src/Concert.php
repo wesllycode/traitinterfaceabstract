@@ -1,8 +1,5 @@
 <?php
 class Concert
 {
-    public function getMenu()
-    {
-
-    }
+    use HasMenu;
 }

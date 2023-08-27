@@ -1,8 +1,5 @@
 <?php
 class Play
 {
-    public function getMenu()
-    {
-
-    }
+   use HasMenu;
 }
