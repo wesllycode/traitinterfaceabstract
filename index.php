@@ -23,6 +23,9 @@ require_once 'src/Play.php';
  * ou criar um corpo de função dentro do método.
  *
  * Uma trait não pode implementar uma interface. Contudo, uma trait pode ser usada para preencher uma interface.
+ *
+ * Criamos uma class Event, o detalhe de criar uma class pai evento para nossas classes filhas
+ * e que alguem tem possibilidade de instancia-la e ela não referir a ninguém.
  */
 
 
@@ -36,3 +39,6 @@ print_r($movie->getMenu());
 $play = new Play();
 print_r($play->getMenu());
 print_r($play->getSeats());
+
+// Aqui alguém pode instanciar e não referir a nenhum evento das classes filhas.
+$event = new Event();
