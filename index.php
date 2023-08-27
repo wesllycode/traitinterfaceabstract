@@ -1,4 +1,7 @@
 <?php
+require_once 'src/Concert.php';
+require_once 'src/Movie.php';
+require_once 'src/Play.php';
 
 /**
  * Como pode perceber, eu instaciar as class e acesse o método getMenu.
@@ -9,13 +12,18 @@
  * Para resolver esse problema, eu criei um trait e chamei dentro das classes.
  * Portanto, centralizei o método getMenu dentro da trait e quando precisar modificar algo
  * em vez de ir em class em class, eu vou apenas na class trait.
+ *
+ * Criei um construct na classes, para criar alguns itens, se observar, cada classe vai ter uma lista
+ * de itens diferentes. Tenho mesmo método só que com valores diferentes para cada class.
  */
 
+
+
 $concert = new Concert();
-$concert->getMenu();
+print_r($concert->getMenu());
 
 $movie = new Movie();
-$movie->getMenu();
+print_r($movie->getMenu());
 
 $play = new Play();
-$play->getMenu();
+print_r($play->getMenu());

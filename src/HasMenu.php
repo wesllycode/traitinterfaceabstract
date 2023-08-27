@@ -1,8 +1,9 @@
 <?php
 trait HasMenu
 {
-    public function getMenu()
+    public array $itens = [];
+    public function getMenu(): array
     {
-
+        return $this->itens;
     }
 }
