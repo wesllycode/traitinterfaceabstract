@@ -1,6 +1,6 @@
 <?php
 require_once 'src/HasMenu.php';
-class Concert implements PricingContract
+class Concert extends Event implements PricingContract
 {
     use HasMenu;
 
