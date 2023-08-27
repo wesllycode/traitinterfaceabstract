@@ -1,6 +1,6 @@
 <?php
 require_once 'src/HasMenu.php';
-class Movie
+class Movie implements PricingContract
 {
     use HasMenu;
 

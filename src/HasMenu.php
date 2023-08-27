@@ -6,4 +6,8 @@ trait HasMenu
     {
         return $this->itens;
     }
+
+    public function getPrice(){
+
+    }
 }

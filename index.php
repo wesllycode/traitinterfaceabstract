@@ -21,6 +21,8 @@ require_once 'src/Play.php';
  *
  * Ao criar uma class do tipo interface, eu posso apenas criar métodos, não pode criar propriedades
  * ou criar um corpo de função dentro do método.
+ *
+ * Uma trait não pode implementar uma interface. Contudo, uma trait pode ser usada para preencher uma interface.
  */
 
 
