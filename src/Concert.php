@@ -1,6 +1,6 @@
 <?php
 require_once 'src/HasMenu.php';
-class Concert
+class Concert implements PricingContract
 {
     use HasMenu;
 
@@ -11,6 +11,11 @@ class Concert
           'Ale',
           'Nachos'
         ];
+    }
+
+    public function getPrice()
+    {
+        // TODO: Implement getPrice() method.
     }
 
 
