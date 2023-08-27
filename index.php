@@ -26,12 +26,16 @@ require_once 'src/Play.php';
  *
  * Criamos uma class Event, o detalhe de criar uma class pai evento para nossas classes filhas
  * e que alguem tem possibilidade de instancia-la e ela não referir a ninguém.
+ *
+ * Interessante que uma classe abstract pode ser comportar tanto como interface e uma trait.
+ * Conseguir chamar método getPrice que estava na class abstact é igual que fiz com a interface.
  */
 
 
 
 $concert = new Concert();
 print_r($concert->getMenu());
+print_r($concert->getPrice());
 
 $movie = new Movie();
 print_r($movie->getMenu());
@@ -40,5 +44,3 @@ $play = new Play();
 print_r($play->getMenu());
 print_r($play->getSeats());
 
-// Aqui alguém pode instanciar e não referir a nenhum evento das classes filhas.
-$event = new Event();

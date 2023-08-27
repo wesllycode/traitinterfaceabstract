@@ -1,6 +1,7 @@
 <?php
 require_once 'src/HasMenu.php';
-class Concert extends Event implements PricingContract
+require_once 'src/EVent.php';
+class Concert extends Event
 {
     use HasMenu;
 
@@ -15,7 +16,7 @@ class Concert extends Event implements PricingContract
 
     public function getPrice()
     {
-        // TODO: Implement getPrice() method.
+        return 'R$12,00'.PHP_EOL;
     }
 
 
