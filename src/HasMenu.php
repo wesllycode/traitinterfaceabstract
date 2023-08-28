@@ -9,6 +9,5 @@ trait HasMenu
 
     public function getPrice()
     {
-
     }
 }

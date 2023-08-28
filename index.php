@@ -43,5 +43,4 @@ print_r($movie->chargeCard());
 
 $play = new Play();
 print_r($play->getMenu());
-print_r($play->getSeats());
 
