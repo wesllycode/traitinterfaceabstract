@@ -1,7 +1,7 @@
 <?php
 require_once 'src/HasMenu.php';
 require_once 'src/HasAssigneSeats.php';
-class Play
+class Play extends Event implements PricingContract
 {
    use HasMenu;
 

@@ -4,7 +4,7 @@ require_once 'src/PricingContract.php';
 require_once 'src/Event.php';
 require_once 'src/SeatingContract.php';
 require_once 'src/HasAssigneSeats.php';
-class Movie extends Event implements SeatingContract
+class Movie extends Event implements SeatingContract, PricingContract
 {
     use HasMenu;
     use HasAssigneSeats;

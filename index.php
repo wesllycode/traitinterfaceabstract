@@ -40,6 +40,7 @@ print_r($concert->chargeCard());
 $movie = new Movie();
 print_r($movie->getMenu());
 print_r($movie->chargeCard());
+print_r($movie->getPrice());
 
 $play = new Play();
 print_r($play->getMenu());
